@@ -3,36 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/Style.css">
-  <title>Portfolio</title>
+  <title>Home | Dharshini Portfolio</title>
+  <link rel="stylesheet" href="Style.css">
+  <!-- Google Fonts & Font Awesome for icons and style consistency -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <div id="logo">Portfolio</div>
-        <button id="hamburger" aria-label="Toggle menu">&#9776;</button>
-        <div id="menu" class="topnav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="extras.html">Extras</a>
-            <a href="resume.html">Resume</a>
-            <a href="contact.html">Contact</a>
+    <nav class="navbar">
+        <div id="logo"><i class="fas fa-code"></i> Portfolio</div>
+        <button id="hamburger" aria-label="Toggle menu" aria-controls="menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div id="menu" class="nav-menu">
+            <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html"><i class="fas fa-user"></i> About</a>
+            <a href="extras.html"><i class="fas fa-star"></i> Extras</a>
+            <a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
         </div>
     </nav>
-    <div id="home">
-        <div id="left">
-            <h2>Dharshini</h2><br>
-            <ul>
-                <li>I’m a passionate beginner full stack web developer, learning how to build complete websites and applications from start to finish.</li>
-                <li>I enjoy working with both front-end design and back-end development.</li>
-                <li>Every day I’m improving my skills in HTML, CSS, JavaScript, and frameworks like Bootstrap.</li>
-                <li>I’m also learning back-end technologies to build powerful, functional web apps.</li>
-                <li>I love solving problems, building projects, and turning ideas into real websites.</li>
-            </ul>
-        </div>
-        <div id="right">
-            <img src="../images/dharshini.jpeg" alt="Image" width="300px" height="510px">
-        </div>
-    </div>
-    <script src="../js/menu.js"></script>
+    <main class="home-main">
+        <section class="home-container glass">
+            <div class="home-content">
+                <div class="home-text">
+                    <h2><i class="fas fa-user-circle"></i> Dharshini</h2>
+                    <ul>
+                        <li>I’m a passionate beginner full stack web developer, learning how to build complete websites and applications from start to finish.</li>
+                        <li>I enjoy working with both front-end design and back-end development.</li>
+                        <li>Every day I’m improving my skills in HTML, CSS, JavaScript, and frameworks like Bootstrap.</li>
+                        <li>I’m also learning back-end technologies to build powerful, functional web apps.</li>
+                        <li>I love solving problems, building projects, and turning ideas into real websites.</li>
+                    </ul>
+                </div>
+                <div class="home-image">
+                    <img src="dharshini.jpeg" alt="Dharshini" class="profile-img">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Dharshini. All rights reserved.</p>
+    </footer>
+    <script src="menu.js"></script>
 </body>
 </html>

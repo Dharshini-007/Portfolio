@@ -3,87 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="../css/Style.css">
+    <title>About | Dharshini Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <div id="logo">Portfolio</div>
-        <button id="hamburger" aria-label="Toggle menu">&#9776;</button>
-        <div id="menu">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="extras.html">Extras</a>
-            <a href="resume.html">Resume</a>
-            <a href="contact.html">Contact</a>
+    <nav class="navbar">
+        <div id="logo"><i class="fas fa-code"></i> Portfolio</div>
+        <button id="hamburger" aria-label="Toggle menu" aria-controls="menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div id="menu" class="nav-menu">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html" class="active"><i class="fas fa-user"></i> About</a>
+            <a href="extras.html"><i class="fas fa-star"></i> Extras</a>
+            <a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
         </div>
     </nav>
-    <div class="bio-container">
-        <h2>Bio</h2>
-        <table class="bio-table">
-            <tr>
-                <th>Name</th>
-                <th>:</th>
-                <td>Dharshini</td>
-            </tr>
-            <tr>
-                <th>Date of Birth</th>
-                <th>:</th>
-                <td>18.05.2005</td>
-            </tr>
-            <tr>
-                <th>Gender</th>
-                <th>:</th>
-                <td>Female</td>
-            </tr>
-            <tr>
-                <th>Nationality</th>
-                <th>:</th>
-                <td>Indian</td>
-            </tr>
-            <tr>
-                <th>Marital Status</th>
-                <th>:</th>
-                <td>Single</td>
-            </tr>
-            <tr>
-                <th>Languages Known</th>
-                <th>:</th>
-                <td>Tamil, English</td>
-            </tr>
-        </table>
-    </div>
-    <div class="education-container">
-        <h2>Education</h2>
-        <div class="table-responsive">
-            <table class="education-table">
-                <tr>
-                    <th>Level</th>
-                    <th>Institution</th>
-                    <th>Passout Year</th>
-                    <th>Percentage</th>
-                </tr>
-                <tr>
-                    <td>B.Tech (2nd Year)</td>
-                    <td>Knowledge Institute of Technology</td>
-                    <td>2027</td>
-                    <td>—</td>
-                </tr>
-                <tr>
-                    <td>12th Grade (Higher Secondary)</td>
-                    <td>Sri Swamy International School</td>
-                    <td>2023</td>
-                    <td>89.7</td>
-                </tr>
-                <tr>
-                    <td>10th Grade (Secondary School)</td>
-                    <td>Sri Swamy International School</td>
-                    <td>2021</td>
-                    <td>94.6</td>
-                </tr>
+    <main class="about-main">
+        <section class="bio-container glass">
+            <h2><i class="fas fa-user-circle"></i> Bio</h2>
+            <table class="bio-table">
+                <tr><th>Name</th><td>Dharshini</td></tr>
+                <tr><th>Date of Birth</th><td>18.05.2005</td></tr>
+                <tr><th>Gender</th><td>Female</td></tr>
+                <tr><th>Nationality</th><td>Indian</td></tr>
+                <tr><th>Marital Status</th><td>Single</td></tr>
+                <tr><th>Languages Known</th><td>Tamil, English</td></tr>
             </table>
-        </div>
-    </div>
-    <script src="../js/menu.js"></script>
+        </section>
+        <section class="education-container glass">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="table-responsive">
+                <table class="education-table">
+                    <tr>
+                        <th>Level</th>
+                        <th>Institution</th>
+                        <th>Passout Year</th>
+                        <th>Percentage</th>
+                    </tr>
+                    <tr>
+                        <td>B.Tech (2nd Year)</td>
+                        <td>Knowledge Institute of Technology</td>
+                        <td>2027</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td>12th Grade</td>
+                        <td>Sri Swamy International School</td>
+                        <td>2023</td>
+                        <td>89.7</td>
+                    </tr>
+                    <tr>
+                        <td>10th Grade</td>
+                        <td>Sri Swamy International School</td>
+                        <td>2021</td>
+                        <td>94.6</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Dharshini. All rights reserved.</p>
+    </footer>
+    <script src="menu.js"></script>
 </body>
 </html>

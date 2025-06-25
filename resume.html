@@ -3,24 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="../css/Style.css">
+    <title>Resume | Dharshini Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <!-- Google Fonts & Font Awesome for icons and style consistency -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <div id="logo">Portfolio</div>
-        <button id="hamburger" aria-label="Toggle menu">&#9776;</button>
-        <div id="menu">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="extras.html">Extras</a>
-            <a href="resume.html">Resume</a>
-            <a href="contact.html">Contact</a>
+    <nav class="navbar">
+        <div id="logo"><i class="fas fa-code"></i> Portfolio</div>
+        <button id="hamburger" aria-label="Toggle menu" aria-controls="menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div id="menu" class="nav-menu">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html"><i class="fas fa-user"></i> About</a>
+            <a href="extras.html"><i class="fas fa-star"></i> Extras</a>
+            <a href="resume.html" class="active"><i class="fas fa-file-alt"></i> Resume</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
         </div>
     </nav>
-    <main>
-        <img src="../images/Dharshini_Resume.jpg" alt="Resume" style="width: 100%; max-width: 550px; height: auto;" class="center-img">
+    <main class="resume-main">
+        <section class="resume-container glass">
+            <h2 style="text-align:center; color:#f78a8a; margin-bottom:1.5rem;">
+                <i class="fas fa-file-alt"></i> My Resume
+            </h2>
+            <div class="resume-image" style="display:flex; justify-content:center;">
+                <img src="Dharshini_Resume.jpg" alt="Resume" class="resume-img">
+            </div>
+        </section>
     </main>
-    <script src="../js/menu.js"></script>
+    <footer>
+        <p>&copy; 2025 Dharshini. All rights reserved.</p>
+    </footer>
+    <script src="menu.js"></script>
 </body>
 </html>

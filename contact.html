@@ -3,58 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="../css/Style.css">
+    <title>Contact | Dharshini Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <!-- Google Fonts & Font Awesome for icons and style consistency -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <div id="logo">Portfolio</div>
-        <button id="hamburger" aria-label="Toggle menu">&#9776;</button>
-        <div id="menu">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="extras.html">Extras</a>
-            <a href="resume.html">Resume</a>
-            <a href="contact.html">Contact</a>
+    <nav class="navbar">
+        <div id="logo"><i class="fas fa-code"></i> Portfolio</div>
+        <button id="hamburger" aria-label="Toggle menu" aria-controls="menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div id="menu" class="nav-menu">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html"><i class="fas fa-user"></i> About</a>
+            <a href="extras.html"><i class="fas fa-star"></i> Extras</a>
+            <a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a>
+            <a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a>
         </div>
     </nav>
-    <main>
-        <section id="contact">
-            <div id="email">
-                <h1>Email:</h1>
-                <p>2k23it13@kiot.ac.in</p>
+    <main class="contact-main">
+        <section class="contact-container glass">
+            <h2 style="text-align:center; color:#f78a8a; margin-bottom:1.5rem;">
+                <i class="fas fa-envelope"></i> Contact
+            </h2>
+            <div class="contact-info" style="display:flex; flex-wrap:wrap; justify-content:center; gap:2.5rem; margin-bottom:2rem;">
+                <div>
+                    <h3 style="color:#f78a8a;"><i class="fas fa-at"></i> Email</h3>
+                    <p>2k23it13@kiot.ac.in</p>
+                </div>
+                <div>
+                    <h3 style="color:#f78a8a;"><i class="fas fa-phone"></i> Phone</h3>
+                    <p>8807400676</p>
+                </div>
             </div>
-            <div id="phone">
-                <h1>Phone:</h1>
-                <p>8807400676</p>
-            </div>
-        </section>
-        <center>
-        <section class="contact-container">
-            <h2>Contact Us</h2><br>
-            <p>We’d love to hear from you! Please fill out the form below.</p><br>
-        
-            <form action="mailto:vdharshini185@gmail.com" method="post">
-                <div class>
+            <form action="mailto:vdharshini185@gmail.com" method="post" class="contact-form">
+                <div>
                     <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
                 </div>
-                <br>
-                <div >
+                <div>
                     <label for="email">Email:</label><br>
-                    <input type="email" name="email" placeholder="Enter your email">
+                    <input type="email" name="email" placeholder="Enter your email" required>
                 </div>
-                <br>
                 <div>
                     <label for="message">Message:</label><br>
-                    <textarea name="message" placeholder="Write your message here"></textarea>
+                    <textarea name="message" placeholder="Write your message here" required></textarea>
                 </div>
-                <br>
-                <button type="submit">Submit</button>
+                <button type="submit"><i class="fas fa-paper-plane"></i> Submit</button>
             </form>
         </section>
-        </center>
     </main>
-    <script src="../js/menu.js"></script>
+    <footer>
+        <p>&copy; 2025 Dharshini. All rights reserved.</p>
+    </footer>
+    <script src="menu.js"></script>
 </body>
 </html>
