@@ -551,3 +551,39 @@ footer {
 a, button, .glass, nav, #menu a {
     transition: all 0.2s cubic-bezier(.4,0,.2,1);
 }
+
+/* Enhanced border, shadow, and shine effect for all images */
+img {
+    border-radius: 18px;
+    border: 2.5px solid #f7baba;
+    box-shadow:
+        0 6px 32px 0 #f78a8a55,
+        0 2px 12px #ffb6b955,
+        0 0 0 8px rgba(255,255,255,0.08);
+    position: relative;
+    background: #fff;
+    transition: box-shadow 0.3s, border-color 0.3s;
+    overflow: hidden;
+}
+
+/* Shine effect on hover */
+img:hover::after {
+    content: "";
+    position: absolute;
+    left: -75%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.7) 60%, rgba(255,255,255,0.1) 100%);
+    transform: skewX(-25deg);
+    animation: shine 0.8s forwards;
+    pointer-events: none;
+    border-radius: 18px;
+    z-index: 2;
+}
+
+@keyframes shine {
+    100% {
+        left: 120%;
+    }
+}
