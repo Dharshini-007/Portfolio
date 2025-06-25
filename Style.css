@@ -433,6 +433,108 @@ body {
         gap: 1.2rem;
     }
 }
+/* Add or update in Style.css for larger, modern, responsive skill bars */
+/* filepath: c:\Users\vdhar\OneDrive\Tài liệu\portfolio\Style.css */
+.skills-container {
+    max-width: 750px;
+    margin: 2.5rem auto;
+    padding: 2.5rem 3rem;
+}
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.skill {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.skill span {
+    font-weight: 600;
+    color: #f78a8a;
+    font-size: 1.18rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.skill-bar {
+    background: #ffe0e0;
+    border-radius: 14px;
+    height: 32px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 2px 8px #f7baba33;
+}
+.skill-level {
+    background: linear-gradient(90deg, #f78a8a 60%, #ffb6b9 100%);
+    color: transparent;
+    font-weight: 600;
+    height: 100%;
+    border-radius: 14px 0 0 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 22px;
+    font-size: 1.15rem;
+    box-shadow: 0 2px 8px #f78a8a33;
+    transition:
+        width 1.2s cubic-bezier(.4,0,.2,1),
+        background 0.3s,
+        box-shadow 0.3s,
+        color 0.2s,
+        font-size 0.2s,
+        height 0.2s;
+    min-width: 48px;
+    position: relative;
+}
+
+/* Hide percentage text by default, show on hover */
+.skill-bar:hover .skill-level {
+    color: #fff;
+    background: linear-gradient(90deg, #ffb6b9 10%, #f78a8a 90%);
+    box-shadow: 0 0 24px 6px #f78a8a77, 0 2px 12px #ffb6b955;
+    font-size: 1.22rem;
+    height: 40px;
+    z-index: 1;
+    letter-spacing: 1px;
+    transition:
+        background 0.3s,
+        box-shadow 0.3s,
+        color 0.2s,
+        font-size 0.2s,
+        height 0.2s;
+}
+
+/* Optional: make the bar itself slightly bigger on hover */
+.skill-bar {
+    transition: box-shadow 0.3s, transform 0.2s, height 0.2s;
+}
+.skill-bar:hover {
+    box-shadow: 0 8px 24px #f78a8a33, 0 2px 12px #ffb6b955;
+    transform: scaleY(1.12);
+    z-index: 2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .skills-container {
+        max-width: 98vw;
+        padding: 1.5rem 0.7rem;
+        margin: 1.2rem 0.2rem;
+    }
+    .skill-level {
+        font-size: 1rem;
+        padding-right: 10px;
+    }
+    .skills-list {
+        gap: 1.2rem;
+    }
+    .skill-bar:hover .skill-level {
+        font-size: 1.08rem;
+        height: 36px;
+    }
+}
 
 /* Footer */
 footer {
