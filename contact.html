@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <div id="logo"><i class="fas fa-code"></i> Portfolio</div>
+        <div id="logo"><i class="fas fa-laptop-code"></i> Portfolio</div>
         <button id="hamburger" aria-label="Toggle menu" aria-controls="menu" aria-expanded="false">
             <i class="fas fa-bars"></i>
         </button>
@@ -39,18 +39,18 @@
                     <p>8807400676</p>
                 </div>
             </div>
-            <form action="mailto:vdharshini185@gmail.com" method="post" class="contact-form">
+            <form id="contactForm" class="contact-form">
                 <div>
                     <label for="name">Name:</label><br>
                     <input type="text" id="name" name="name" placeholder="Enter your name" required>
                 </div>
                 <div>
                     <label for="email">Email:</label><br>
-                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 </div>
                 <div>
                     <label for="message">Message:</label><br>
-                    <textarea name="message" placeholder="Write your message here" required></textarea>
+                    <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
                 </div>
                 <button type="submit"><i class="fas fa-paper-plane"></i> Submit</button>
             </form>
