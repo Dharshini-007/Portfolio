@@ -588,3 +588,93 @@ img:hover::after {
     }
 }
 
+/* Animated glowing background dots */
+.background-glow {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.background-glow span {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  opacity: 0.32;
+  filter: blur(2px);
+  animation: floatGlow 18s linear infinite;
+  background: radial-gradient(circle, #fffbe6 0%, #ffe0e0 60%, #f78a8a 100%);
+}
+.background-glow span:nth-child(1) {
+  width: 180px; height: 180px;
+  left: 8vw; top: 12vh;
+  animation-delay: 0s;
+}
+.background-glow span:nth-child(2) {
+  width: 120px; height: 120px;
+  left: 70vw; top: 18vh;
+  animation-delay: 4s;
+  background: radial-gradient(circle, #f78a8a 0%, #ffb6b9 80%, transparent 100%);
+}
+.background-glow span:nth-child(3) {
+  width: 90px; height: 90px;
+  left: 50vw; top: 70vh;
+  animation-delay: 2s;
+  background: radial-gradient(circle, #fffbe6 0%, #ffe0e0 80%, transparent 100%);
+}
+.background-glow span:nth-child(4) {
+  width: 140px; height: 140px;
+  left: 80vw; top: 60vh;
+  animation-delay: 7s;
+  background: radial-gradient(circle, #f78a8a 0%, #fffbe6 80%, transparent 100%);
+}
+.background-glow span:nth-child(5) {
+  width: 60px; height: 60px;
+  left: 25vw; top: 80vh;
+  animation-delay: 10s;
+}
+.background-glow span:nth-child(6) {
+  width: 100px; height: 100px;
+  left: 60vw; top: 40vh;
+  animation-delay: 12s;
+  background: radial-gradient(circle, #ffb6b9 0%, #fffbe6 80%, transparent 100%);
+}
+.background-glow span:nth-child(7) {
+  width: 70px; height: 70px;
+  left: 35vw; top: 30vh;
+  animation-delay: 6s;
+}
+.background-glow span:nth-child(8) {
+  width: 110px; height: 110px;
+  left: 15vw; top: 60vh;
+  animation-delay: 14s;
+  background: radial-gradient(circle, #f78a8a 0%, #ffe0e0 80%, transparent 100%);
+}
+.background-glow span:nth-child(9) {
+  width: 80px; height: 80px;
+  left: 85vw; top: 35vh;
+  animation-delay: 9s;
+}
+.background-glow span:nth-child(10) {
+  width: 130px; height: 130px;
+  left: 55vw; top: 10vh;
+  animation-delay: 3s;
+  background: radial-gradient(circle, #fffbe6 0%, #ffb6b9 80%, transparent 100%);
+}
+
+@keyframes floatGlow {
+  0% { transform: translateY(0) scale(1);}
+  50% { transform: translateY(-30px) scale(1.08);}
+  100% { transform: translateY(0) scale(1);}
+}
+
+@media (max-width: 700px) {
+  .background-glow span {
+    opacity: 0.18;
+    filter: blur(3px);
+  }
+}
+
+
